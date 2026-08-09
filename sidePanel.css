@@ -1,63 +1,16 @@
-/* sidepanel.css */
-body {
-  margin: 0;
+body { 
+  font-family: sans-serif;
   padding: 12px;
-  font-family: system-ui, -apple-system, sans-serif;
-  height: 100vh;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  background-color: #f9f9fb;
+  margin: 0; 
 }
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 12px;
+.hidden { 
+  display: none !important; 
 }
-
-.tabs {
-  display: flex;
-  gap: 6px;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 8px;
-  margin-bottom: 12px;
-}
-
-.tab-btn {
-  flex: 1;
-  padding: 6px 8px;
-  font-size: 12px;
-  border: none;
-  background: #eee;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.tab-btn.active {
-  background: #0056b3;
-  color: white;
-}
-
-.tab-content {
-  display: none;
-  flex: 1;
-  overflow-y: auto; /* Enable vertical scrolling within the side panel */
-}
-
-.tab-content.active {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.output-box {
-  background: white;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  padding: 10px;
-  font-size: 13px;
-  line-height: 1.5;
-  white-space: pre-wrap;
+.output-box { 
+  background: #f4f4f9; 
+  padding: 10px; 
+  border-radius: 6px; 
+  margin-top: 10px; 
+  min-height: 50px; 
+  white-space: pre-wrap; 
 }

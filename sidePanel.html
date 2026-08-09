@@ -4,12 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wiztaara AI</title>
+  <link rel="stylesheet" href="sidePanel.css">
 </head>
 <body>
-  <a href="https://aistudio.google.com/api-keys" target="_blank">Get your API key</a>
-  <input type="text" id="apiKey" class="apiKey"/>
-  <button type="submit" id="submitBtn" class="submitBtn">Submit</button>
-  <p id="keyStatus" class="key-status"></p>
+  <!-- API Key Setup window -->
+  <div id="authView">
+    <a href="https://aistudio.google.com/api-keys" target="_blank">Get your API key</a>
+    <input type="password" id="apiKey" class="apiKey"/>
+    <button type="submit" id="submitBtn" class="submitBtn">Submit</button>
+    <p id="keyStatus" class="key-status"></p>
+  </div>
+
+  <!-- AI interaction- main view -->
+   <div id="mainView" class="hidden">
+    <textarea id="userQuery" rows="3" style="width: 100%;" placeholder="Ask anything..."></textarea>
+    <button id="askAiBtn" style="margin-top: 5px;">Submit Query</button>
+    
+    <div id="responseContainer" class="output-box">
+      Response will appear here...
+    </div>
+
+    <button id="resetKeyBtn" style="margin-top: 20px; font-size: 11px;">⚙️ Change API Key</button>
+   </div>
   <script src="sidePanel.js"></script>
 </body>
 </html>
