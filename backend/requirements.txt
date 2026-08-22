@@ -1,4 +1,3 @@
-fastapi
-uvicorn
-youtube-transcript-api
 google-genai
+pydantic
+youtube-transcript-api
